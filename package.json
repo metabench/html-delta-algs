@@ -1,0 +1,15 @@
+{
+    "name": "html-delta-algs",
+    "main": "module.js",
+    "license": "MIT",
+    "dependencies": {
+        "cheerio": "^1.0.0-rc.12",
+        "dom-serializer": "^2.0.0",
+        "domhandler": "^5.0.3",
+        "htmlparser2": "^9.0.0",
+        "lang-mini": "^0.0.39",
+        "msgpackr": "^1.10.0",
+        "string-delta-algs": "^0.0.2"
+    },
+    "version": "0.0.1"
+}
