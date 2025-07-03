@@ -3,13 +3,13 @@
     "main": "module.js",
     "license": "MIT",
     "dependencies": {
-        "cheerio": "^1.0.0-rc.12",
+        "cheerio": "^1.1.0",
         "dom-serializer": "^2.0.0",
         "domhandler": "^5.0.3",
-        "htmlparser2": "^9.0.0",
-        "lang-mini": "^0.0.39",
-        "msgpackr": "^1.10.0",
+        "htmlparser2": "^10.0.0",
+        "lang-mini": "^0.0.40",
+        "msgpackr": "^1.11.4",
         "string-delta-algs": "^0.0.2"
     },
-    "version": "0.0.1"
+    "version": "0.0.2"
 }

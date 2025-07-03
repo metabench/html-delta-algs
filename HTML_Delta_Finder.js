@@ -40,6 +40,7 @@ class HTML_Delta_Finder {
     }
     create(a, b) {
         const method = map_methods_by_name.get(this.method_name);
+        console.log('Delta finding method name:', this.method_name);
         const res = method.create(a, b);
         //console.log('res', res);
         return res;
@@ -68,6 +69,26 @@ class HTML_Delta_Finder {
 
         
     }
+}
+
+if (require.main === module) {
+    // Test the HTML_Delta_Finder
+
+    // Want to build in the correct operations to handle a variety of delta tasks.
+    //   Inserting text (within a text node only?) being one such operation.
+
+
+    const finder = new HTML_Delta_Finder();
+    const a = '<div>Hello</div>';
+    const b = '<div>Hello World</div>';
+    const delta = finder.create(a, b);
+    console.log('Delta:', JSON.stringify(delta));
+    const result = finder.apply(a, delta);
+    console.log('Result:', result);
+
+    const delta_json_length = JSON.stringify(delta).length;
+    console.log('b.length', b.length);
+    console.log('delta_json_length', delta_json_length);
 }
 
 module.exports = HTML_Delta_Finder;
